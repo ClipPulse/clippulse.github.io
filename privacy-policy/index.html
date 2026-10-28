@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy – ClipPulse</title>
+  <link rel="icon" href="/icon.png">
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="/"><img src="/icon.png" alt="">ClipPulse</a>
+    <nav><a href="/#download">Download</a><a href="/terms-of-service/">Terms</a></nav>
+  </div>
+</header>
+
+<main class="wrap doc">
+  <h1>ClipPulse Privacy Policy</h1>
+  <p class="small">Last updated: October 28, 2026</p>
+
+  <p>ClipPulse is a desktop application that runs on your own computer. This policy explains what information
+    ClipPulse uses and where it is kept.</p>
+
+  <h2>Information ClipPulse uses</h2>
+  <ul>
+    <li><b>TikTok account information</b> (via the <code>user.info.basic</code> scope): your account's open ID,
+      username, display name and avatar, so the app can show which account you are posting to.</li>
+    <li><b>TikTok access tokens</b> that let the app publish videos you approve (via the <code>video.publish</code> scope).</li>
+    <li><b>Your files and settings</b>: the folders, videos, cover images, captions files and queue you set up in the app.</li>
+  </ul>
+
+  <h2>Where it is stored</h2>
+  <p>All of this information is stored only on your computer, in the ClipPulse data folder
+    (<code>%APPDATA%\ClipPulse</code> on Windows). ClipPulse has no user accounts and no cloud storage,
+    and we do not receive copies of your videos, captions, queue or account information.</p>
+
+  <h2>What is sent to TikTok</h2>
+  <p>When a video you approved is published, ClipPulse sends the video file, its caption and the settings you chose
+    (who can view it, comments, duet, stitch, content disclosure) directly from your computer to TikTok through the
+    TikTok Content Posting API. TikTok's handling of that content is described in TikTok's own Privacy Policy.</p>
+
+  <h2>Token service</h2>
+  <p>To sign in with TikTok, the app must exchange a one-time login code for access tokens using an application secret.
+    So that this secret does not have to be included in the downloadable app, the exchange (and token refresh and revoke
+    requests) goes through a small ClipPulse token service hosted on Cloudflare. It forwards the request to TikTok and
+    returns TikTok's response to your computer. It does not store or log codes or tokens, and your videos never pass through it.
+    Cloudflare processes these requests as our infrastructure provider.</p>
+
+  <h2>What we do not do</h2>
+  <ul>
+    <li>No analytics, tracking, advertising or cookies – neither in the app nor on this website.</li>
+    <li>We do not sell, share or rent any information.</li>
+    <li>The app does not access your TikTok data beyond the two scopes above.</li>
+  </ul>
+
+  <h2>Removing your data</h2>
+  <ul>
+    <li>In ClipPulse, click <b>Disconnect</b> next to an account to revoke its tokens and remove them from your computer.</li>
+    <li>You can also remove ClipPulse's access in the TikTok app under your account's security / app permissions settings.</li>
+    <li>To delete everything, quit ClipPulse and delete the <code>%APPDATA%\ClipPulse</code> folder and the app folder.</li>
+  </ul>
+
+  <h2>Children</h2>
+  <p>ClipPulse is intended for users who are old enough to use TikTok under TikTok's terms.</p>
+
+  <h2>Changes</h2>
+  <p>If this policy changes, the new version will be published on this page with a new date.</p>
+
+  <h2>Contact</h2>
+  <p>Questions about this policy: <a href="mailto:fernandwolfenstein@gmail.com">fernandwolfenstein@gmail.com</a></p>
+</main>
+
+<footer>
+  <div class="wrap footer-inner">
+    <span>© ClipPulse</span>
+    <span><a href="/privacy-policy/">Privacy Policy</a> · <a href="/terms-of-service/">Terms of Service</a></span>
+    <span>ClipPulse is an independent app and is not affiliated with or endorsed by TikTok.</span>
+  </div>
+</footer>
+</body>
+</html>
